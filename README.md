@@ -1,74 +1,44 @@
-# Bem-vindo ao seu projeto Lovable
+# Sistema de Gestão e Visualização de Processos
 
-## Informações do Projeto
+Este projeto é uma aplicação web em React para gerenciamento e visualização de processos organizacionais e seus documentos associados. A interface permite navegar entre diferentes processos, filtrar por nome e status, além de visualizar documentos em PDF e imagens diretamente na página com suporte a zoom. Os dados apresentados são simulados localmente (dados fictícios), sendo possível expandir para conexão com APIs reais conforme necessário. O sistema exibe informações detalhadas do processo, incluindo área, departamento, setor, descrição e status, além de agrupar os documentos por tipo com ícones representativos.
 
-**URL**: https://lovable.dev/projects/c6ab6cf3-1be0-43b2-b2a7-73f58db07539
+## Funcionalidades principais
 
-## Como posso editar este código?
+- Listagem e filtro dinâmico de processos.
+- Visualização detalhada de processos selecionados.
+- Exibição e navegação entre documentos agrupados por tipo.
+- Visualizador integrado de documentos PDF e imagens com zoom.
+- Interface responsiva e acessível utilizando componentes React personalizados e biblioteca de ícones lucide-react.
 
-Existem várias maneiras de editar sua aplicação.
+## Tecnologias utilizadas
 
-**Usar o Lovable**
+- React (com hooks e React Router)
+- date-fns para formatação de datas com suporte a pt-BR
+- lucide-react para ícones modernos
+- Tailwind CSS (presumido pelo uso das classes utilitárias)
+- JavaScript/TypeScript (tipo genérico no código)
 
-Basta visitar o [Projeto no Lovable](https://lovable.dev/projects/c6ab6cf3-1be0-43b2-b2a7-73f58db07539) e começar a enviar comandos.
+## Como rodar o projeto
 
-As alterações feitas pelo Lovable serão automaticamente commitadas para este repositório.
+1. Clone este repositório:  
+   `git clone https://github.com/jEduuardo/GestaoDocumentos.git`  
+   `cd gestaodocumento`
 
-**Usar seu IDE preferido**
+2. Instale as dependências:  
+   `npm install`
 
-Se quiser trabalhar localmente com seu próprio ambiente, você pode clonar este repositório e fazer push das alterações. As mudanças serão refletidas no Lovable.
+3. Inicie o servidor de desenvolvimento:  
+   `npm run dev`
 
-O único requisito é ter o Node.js e npm instalados – [instale com nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. Abra o navegador e acesse:  
+   `http://localhost:5173`
 
-Siga estes passos:
+## Observações
 
-```sh
-# Passo 1: Clone o repositório com a URL do projeto.
-git clone <SUA_URL_GIT>
+- Os dados são fictícios e gerados localmente no frontend para facilitar testes.  
+- Os arquivos de documentos são carregados via caminho fixo apontando para uma pasta local simulada (`../database/process/active/`).  
+- O sistema pode ser facilmente adaptado para consumir APIs reais, adicionando backend e persistência.  
+- Ideal para quem busca uma solução simples e clara para gerenciamento documental em processos internos.
 
-# Passo 2: Vá até o diretório do projeto.
-cd <NOME_DO_SEU_PROJETO>
+---
 
-# Passo 3: Instale as dependências necessárias.
-npm i
-
-# Passo 4: Inicie o servidor de desenvolvimento com recarregamento automático.
-npm run dev
-
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c6ab6cf3-1be0-43b2-b2a7-73f58db07539) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

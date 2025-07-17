@@ -9,6 +9,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "module": "commonjs",
+    "target": "es2020",
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,

@@ -14,7 +14,6 @@ const SettingsPage = () => {
         <TabsList className="w-full justify-start mb-6">
           <TabsTrigger value="general">Geral</TabsTrigger>
           <TabsTrigger value="notifications">Notificações</TabsTrigger>
-          <TabsTrigger value="users">Usuários</TabsTrigger>
           <TabsTrigger value="backup">Backup e Restauração</TabsTrigger>
         </TabsList>
         
@@ -132,75 +131,7 @@ const SettingsPage = () => {
             </CardContent>
           </Card>
         </TabsContent>
-        
-        <TabsContent value="users">
-          <Card>
-            <CardHeader>
-              <CardTitle>Gerenciamento de Usuários</CardTitle>
-              <CardDescription>Adicione ou remova usuários do sistema.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="text-left border-b">
-                        <th className="pb-3 font-medium">Nome</th>
-                        <th className="pb-3 font-medium">Email</th>
-                        <th className="pb-3 font-medium">Função</th>
-                        <th className="pb-3 font-medium">Status</th>
-                        <th className="pb-3 font-medium text-right">Ações</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="border-b">
-                        <td className="py-3">Maria Silva</td>
-                        <td className="py-3">maria@empresa.com</td>
-                        <td className="py-3">Administrador</td>
-                        <td className="py-3">
-                          <span className="inline-block px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">
-                            Ativo
-                          </span>
-                        </td>
-                        <td className="py-3 text-right">
-                          <Button variant="ghost" size="sm">Editar</Button>
-                        </td>
-                      </tr>
-                      <tr className="border-b">
-                        <td className="py-3">João Santos</td>
-                        <td className="py-3">joao@empresa.com</td>
-                        <td className="py-3">Editor</td>
-                        <td className="py-3">
-                          <span className="inline-block px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">
-                            Ativo
-                          </span>
-                        </td>
-                        <td className="py-3 text-right">
-                          <Button variant="ghost" size="sm">Editar</Button>
-                        </td>
-                      </tr>
-                      <tr className="border-b">
-                        <td className="py-3">Ana Martins</td>
-                        <td className="py-3">ana@empresa.com</td>
-                        <td className="py-3">Visualizador</td>
-                        <td className="py-3">
-                          <span className="inline-block px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-800">
-                            Pendente
-                          </span>
-                        </td>
-                        <td className="py-3 text-right">
-                          <Button variant="ghost" size="sm">Editar</Button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <Button>Adicionar Usuário</Button>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-        
+              
         <TabsContent value="backup">
           <Card>
             <CardHeader>
